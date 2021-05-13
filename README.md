@@ -5,6 +5,10 @@
 ## Build Setup
 
 ``` bash
+# clone the project
+
+git clone https://github.com/Alterhi99/FrontendPROJECT.git
+
 # install dependencies
 npm install
 
