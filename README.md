@@ -1,4 +1,4 @@
-# movie_rating_app
+# JBH FRONT END
 
 > A Vue.js project
 
