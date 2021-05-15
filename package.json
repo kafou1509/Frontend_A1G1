@@ -1,8 +1,8 @@
 {
-  "name": "movie_rating_app",
-  "version": "1.0.0",
+  "name": "Jobhunt_web_app_front-end",
+  "version": "0.0.1",
   "description": "A Vue.js project",
-  "author": "hayden <alterhi99@gmail.com>",
+  "author": "Hichem Aitouakli <alterhi99@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -85,7 +85,7 @@
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-dev-server": "^2.11.5",
     "webpack-merge": "^4.1.0"
   },
   "engines": {

@@ -50,8 +50,23 @@
   <v-app-bar color="#FFC600" dark fixed app>
     <v-app-bar-nav-icon style="color:#1A1A1A" @click.stop="drawer = !drawer">
     </v-app-bar-nav-icon>
-    <v-toolbar-title style="color:#1A1A1A">BRUH</v-toolbar-title>
-    <v-avatar id="avatar" color="#1A1A1A" size="56"></v-avatar>
+    <v-toolbar-title style="color:#1A1A1A">Dashboard</v-toolbar-title>
+
+    <b-nav-item-dropdown right no-caret>
+      <!-- Using 'button-content' slot -->
+      <template #button-content>
+        <v-avatar id="avatar" color="#1A1A1A" size="40"></v-avatar>
+      </template>
+      <b-dropdown-item href="#" class="d-flex align-items-center">
+        Profile
+      </b-dropdown-item>
+      <b-dropdown-item href="#" class="d-flex align-items-center">
+        Settings
+      </b-dropdown-item>
+      <b-dropdown-item href="#" class="d-flex align-items-center">
+        Sign out
+      </b-dropdown-item>
+    </b-nav-item-dropdown>
   </v-app-bar>
   <v-main>
     <v-container fluid>
