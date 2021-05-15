@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from '@/components/Home';
 import Contact from '@/components/Contact';
 import Profile from '@/components/Profile';
+import Upgrade from '@/components/Upgrade';
 
 Vue.use(Router);
 /* eslint-disable */
