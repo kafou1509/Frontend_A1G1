@@ -11,14 +11,16 @@
 </v-layout>
 </template>
 <script type="text/javascript">
-export default {
+export default {/* eslint-disable */
   data() {
     return {
+      title: 'Dashboard',
       message: 'Hello there, how are you this morning?',
+      number: 1,
     };
   },
   methods: {
-    reply() /* eslint-disable */ {
+    reply()  {
       this.message = "I'm doing great. Thank You!";
     },
   },

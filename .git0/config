@@ -4,7 +4,7 @@
 	bare = false
 	logallrefupdates = true
 [remote "origin"]
-	url = https://github.com/Alterhi99/FrontendPROJECT.git
+	url = https://github.com/Alterhi99/Frontend_A1G1.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
 	remote = origin

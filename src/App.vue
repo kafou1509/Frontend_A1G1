@@ -1,4 +1,5 @@
-<template><!-- eslint-disable max-len -->
+<template>
+<!-- eslint-disable max-len -->
 <v-app id="inspire">
   <v-navigation-drawer color="#1A1A1A" fixed v-model="drawer" permanent :mini-variant.sync="drawer" app>
     <v-btn absolute right fab @click="drawer = !drawer" :style="{color:white,top: '50%', transform:'translate(75%, -50%)'}">
@@ -19,7 +20,7 @@
           <v-list-item-content id="imp" style="color:white">Dashboard</v-list-item-content>
         </v-list-item>
       </router-link>
-      <router-link v-bind:to="{ name: 'Contact' }" class="side_bar_link">
+      <router-link v-bind:to="{ name: 'Joboffer' }" class="side_bar_link">
         <v-list-item>
           <v-list-item-action>
             <v-icon style="color:white">mdi-briefcase</v-icon>
@@ -29,7 +30,7 @@
           </v-hover>
         </v-list-item>
       </router-link>
-      <router-link v-bind:to="{ name: 'Contact' }" class="side_bar_link">
+      <router-link v-bind:to="{ name: 'Upgrade' }" class="side_bar_link">
         <v-list-item>
           <v-list-item-action>
             <v-icon style="color:white">mdi-cogs</v-icon>
@@ -37,7 +38,7 @@
           <v-list-item-content id="imp" style="color:white">Upgrade</v-list-item-content>
         </v-list-item>
       </router-link>
-      <router-link v-bind:to="{ name: 'Contact' }" class="side_bar_link">
+      <router-link v-bind:to="{ name: 'Profile' }" class="side_bar_link">
         <v-list-item>
           <v-list-item-action>
             <v-icon style="color:white">mdi-account-circle</v-icon>
@@ -47,26 +48,33 @@
       </router-link>
     </v-list>
   </v-navigation-drawer>
-  <v-app-bar color="#FFC600" dark fixed app>
-    <v-app-bar-nav-icon style="color:#1A1A1A" @click.stop="drawer = !drawer">
-    </v-app-bar-nav-icon>
-    <v-toolbar-title style="color:#1A1A1A">Dashboard</v-toolbar-title>
+  <v-app-bar fixed app class="topbar">
+    <v-icon style="color:#1A1A1A">mdi-cogs</v-icon>
+    <v-toolbar-title style="color:#1A1A1A">Upgrade</v-toolbar-title>
+    <v-text-field
+        hide-details
+        prepend-icon="mdi-magnify"
+        single-line
+      ></v-text-field>
+    <v-spacer></v-spacer>
+    <div class="text-center">
+      <v-menu offset-y>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn  icon v-bind="attrs" v-on="on">
+            <v-avatar size="40">
+              <v-icon style="color:black">mdi-account</v-icon>
+            </v-avatar>
 
-    <b-nav-item-dropdown right no-caret>
-      <!-- Using 'button-content' slot -->
-      <template #button-content>
-        <v-avatar id="avatar" color="#1A1A1A" size="40"></v-avatar>
-      </template>
-      <b-dropdown-item href="#" class="d-flex align-items-center">
-        Profile
-      </b-dropdown-item>
-      <b-dropdown-item href="#" class="d-flex align-items-center">
-        Settings
-      </b-dropdown-item>
-      <b-dropdown-item href="#" class="d-flex align-items-center">
-        Sign out
-      </b-dropdown-item>
-    </b-nav-item-dropdown>
+          </v-btn>
+          Admin
+        </template>
+        <v-list>
+          <v-list-item v-for="(item, index) in items" :key="index">
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+    </div>
   </v-app-bar>
   <v-main>
     <v-container fluid>
@@ -90,9 +98,17 @@ export default { //import { mdiCogs } from '@mdi/js';
   data: () => ({
     drawer: null,
     logo: foot1,
+    props: { // eslint-disable-next-line
+      source: String,
+    },
+    items: [{ // eslint-disable-next-line
+      title: 'Profile'
+    }, { // eslint-disable-next-line
+      title: 'Settings'
+    }, { // eslint-disable-next-line
+      title: 'Sign out'
+    }],
   }),
-  props: {
-    source: String,
-  },
+
 };
 </script>

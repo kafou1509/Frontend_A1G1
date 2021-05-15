@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/Home';
-import Contact from '@/components/Contact';
+import Joboffer from '@/components/Joboffer';
 import Profile from '@/components/Profile';
 import Upgrade from '@/components/Upgrade';
 
@@ -14,17 +14,17 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/contact',
-      name: 'Contact',
-      component: Contact,
+      path: '/',
+      name: 'Joboffer',
+      component: Joboffer,
     },
     {
-      path: '/profile',
+      path: '/',
       name: 'Profile',
       component: Profile,
     },
     {
-      path: '/upgrade',
+      path: '/',
       name: 'Upgrade',
       component: Upgrade,
     },
