@@ -1,18 +1,24 @@
 # AIE Front end project A1G1
 
-> A Vue.js project
+> Le front-end du projet
 
-## Build Setup
+## Installation and Build Setup
 
 ``` bash
 # clone the project
-
+```
+Pour cloner le projet:
+``` bash
 git clone https://github.com/Alterhi99/Frontend_A1G1.git
-
+```
+``` bash
 # install nodejs and npm
-[download]{https://nodejs.org/en/}
+```
+[Télécharger Node.js et NPM](https://nodejs.org/en/)
 
+``` bash
 # install dependencies
+
 npm install
 
 # serve with hot reload at localhost:8080
