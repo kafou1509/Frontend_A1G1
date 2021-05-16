@@ -1,4 +1,4 @@
-# JBH FRONT END
+# AIE Front end project A1G1
 
 > A Vue.js project
 
@@ -7,7 +7,10 @@
 ``` bash
 # clone the project
 
-git clone https://github.com/Alterhi99/FrontendPROJECT.git
+git clone https://github.com/Alterhi99/Frontend_A1G1.git
+
+# install nodejs and npm
+[download]{https://nodejs.org/en/}
 
 # install dependencies
 npm install
