@@ -1,5 +1,6 @@
 # AIE Front end project A1G1
-![logonav](https://user-images.githubusercontent.com/57890689/118402544-3eb48400-b662-11eb-8e74-e2a48b2c2886.png)
+![W](https://user-images.githubusercontent.com/68516549/118410087-0165eb80-b68e-11eb-8556-eec3f9cb3b72.png)
+
 > Le front-end du projet
 
 ## Installation and Build Setup
