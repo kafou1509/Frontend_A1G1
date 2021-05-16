@@ -22,29 +22,35 @@ git clone https://github.com/Alterhi99/Frontend_A1G1.git
 ``` bash
 npm install
 ```
-### Lancer le serveur à hot-reload dans localhost:8080
+##### Lancer le serveur à hot-reload dans localhost:8080
 ``` bash
 npm run dev
 ```
-### Build for production with minification
+##### Build for production with minification
 ``` bash
 npm run build
 ```
-### Build for production and view the bundle analyzer report
+##### Build for production and view the bundle analyzer report
 ``` bash
 npm run build --report
 ```
-### Executer les testes unitaires
+##### Executer les testes unitaires
 ``` bash
 npm run unit
 ```
-### Executer les testes e2e
+##### Executer les testes e2e
 ``` bash
 npm run e2e
 ```
-### Executer tout les testes
+##### Executer tout les testes
 ``` bash
 npm test
 ```
 
+### Admin Maquette
+![Recuiter](https://user-images.githubusercontent.com/68516549/118410192-8224e780-b68e-11eb-8efd-967769f57390.png)
+
+
+
+## RQ
 Pour une explication détaillée du fonctionnement, consultez le [guide](http://vuejs-templates.github.io/webpack/) et la [documentation pour vue-loader](http://vuejs.github.io/vue-loader).
