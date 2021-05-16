@@ -1,5 +1,5 @@
 # AIE Front end project A1G1
-
+![logonav](https://user-images.githubusercontent.com/57890689/118402544-3eb48400-b662-11eb-8e74-e2a48b2c2886.png)
 > Le front-end du projet
 
 ## Installation and Build Setup
@@ -21,7 +21,7 @@ git clone https://github.com/Alterhi99/Frontend_A1G1.git
 ``` bash
 npm install
 ```
-### serve with hot reload at localhost:8080
+### Lancer le serveur à hot-reload dans localhost:8080
 ``` bash
 npm run dev
 ```
