@@ -25,26 +25,25 @@ npm install
 ``` bash
 npm run dev
 ```
-
-### build for production with minification
+### Build for production with minification
 ``` bash
 npm run build
 ```
-### build for production and view the bundle analyzer report
+### Build for production and view the bundle analyzer report
 ``` bash
 npm run build --report
 ```
-### run unit tests
+### Executer les testes unitaires
 ``` bash
 npm run unit
 ```
-### run e2e tests
+### Executer les testes e2e
 ``` bash
 npm run e2e
 ```
-### run all tests
+### Executer tout les testes
 ``` bash
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Pour une explication détaillée du fonctionnement, consultez le [guide](http://vuejs-templates.github.io/webpack/) et la [documentation pour vue-loader](http://vuejs.github.io/vue-loader).
