@@ -12,12 +12,12 @@
         <v-img :src="logo" max-height="150" max-width="150" class="center"></v-img>
       </v-flex>
       <br>
-      <router-link v-bind:to="{ name: 'Home' }" class="side_bar_link">
+      <router-link v-bind:to="{ name: 'Dashboard' }" class="side_bar_link">
         <v-list-item>
           <v-list-item-action>
             <v-icon style="color:white">home</v-icon>
           </v-list-item-action>
-          <v-list-item-content id="imp" style="color:white">Dashboard</v-list-item-content>
+          <v-list-item-content style="color:white">Dashboard</v-list-item-content>
         </v-list-item>
       </router-link>
       <router-link v-bind:to="{ name: 'Joboffer' }" class="side_bar_link">
@@ -26,22 +26,22 @@
             <v-icon style="color:white">mdi-briefcase</v-icon>
           </v-list-item-action>
           <v-hover v-slot="{ hover }">
-            <v-list-item-content id="imp" style="color:white">Job offer</v-list-item-content>
+            <v-list-item-content  style="color:white">Job offer</v-list-item-content>
           </v-hover>
         </v-list-item>
       </router-link>
       <router-link v-bind:to="{ name: 'Upgrade' }" class="side_bar_link">
         <v-list-item>
           <v-list-item-action>
-            <v-icon style="color:white">mdi-cogs</v-icon>
+            <v-icon  style="color:white">mdi-cogs</v-icon>
           </v-list-item-action>
-          <v-list-item-content id="imp" style="color:white">Upgrade</v-list-item-content>
+          <v-list-item-content  style="color:white">Upgrade</v-list-item-content>
         </v-list-item>
       </router-link>
       <router-link v-bind:to="{ name: 'Profile' }" class="side_bar_link">
         <v-list-item>
           <v-list-item-action>
-            <v-icon style="color:white">mdi-account-circle</v-icon>
+            <v-icon id="imp" style="color:white">mdi-account-circle</v-icon>
           </v-list-item-action>
           <v-list-item-content id="imp" style="color:white">Profile</v-list-item-content>
         </v-list-item>
@@ -50,11 +50,14 @@
   </v-navigation-drawer>
   <v-app-bar fixed app class="topbar">
     <v-icon style="color:#1A1A1A">mdi-cogs</v-icon>
-    <v-toolbar-title style="color:#1A1A1A">Upgrade</v-toolbar-title>
+    <v-toolbar-title style="color:#1A1A1A" v-text="this.$route.name"></v-toolbar-title>
+    <v-spacer></v-spacer>
     <v-text-field
         hide-details
         prepend-icon="mdi-magnify"
         single-line
+        label="Search"
+        outlined
       ></v-text-field>
     <v-spacer></v-spacer>
     <div class="text-center">
@@ -84,7 +87,7 @@
     </v-container>
   </v-main>
   <v-footer color="#FFC600" app>
-    <span style="color:#1A1A1A">&copy;Job Hunter 2021</span>
+    <span style="color:#1A1A1A">&copy;Job Hunt 2021</span>
   </v-footer>
 </v-app>
 </template>
