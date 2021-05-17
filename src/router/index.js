@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '@/components/Home';
+import Dashboard from '@/components/Dashboard';
 import Joboffer from '@/components/Joboffer';
 import Profile from '@/components/Profile';
 import Upgrade from '@/components/Upgrade';
@@ -10,8 +10,8 @@ Vue.use(Router);
 export default new Router({
   routes: [{
       path: '/',
-      name: 'Home',
-      component: Home,
+      name: 'Dashboard',
+      component: Dashboard,
     },
     {
       path: '/',
