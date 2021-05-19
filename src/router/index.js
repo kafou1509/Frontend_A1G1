@@ -9,7 +9,7 @@ Vue.use(Router);
 /* eslint-disable */
 export default new Router({
   routes: [{
-      path: '/Dashboard',
+      path: '/',
       name: 'Dashboard',
       component: Dashboard,
     },
