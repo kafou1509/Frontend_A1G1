@@ -34,26 +34,38 @@ v-img{
   margin-left: auto;
   margin-right: auto;
 }
-a.side_bar_link div.v-list-item__content:hover{
-  color: #FFC600!important;
-}
 
-a.side_bar_link + div.v-list-item__content:hover{
-  opacity:50%;
-}
 #up{
   position:absolute;
   top:30px;
 }
 #down{
   position:absolute;
-  top:200px;
+  top:100px;
+  right:120px;
+}
+#validation{
+  position:absolute;
+  right:500px;
 }
 .elevation-1{
 max-width:200%;
 max-height:100%;
 
 }
+a.side_bar_link:hover div.v-list-item__content{
+  color: #FFC600!important;
+}
+a.side_bar_link:hover i.v-icon {
+  color: #FFC600!important;
+}
+
+a.side_bar_link + div.v-list-item__content:hover{
+  opacity:50%;
+}
 a.active.router-link-exact-active div.v-list-item__content{
+  color: #FFC600!important;
+}
+a.active.router-link-exact-active i.v-icon{
   color: #FFC600!important;
 }
