@@ -9,22 +9,22 @@ Vue.use(Router);
 /* eslint-disable */
 export default new Router({
   routes: [{
-      path: '/',
+      path: '/Dashboard',
       name: 'Dashboard',
       component: Dashboard,
     },
     {
-      path: '/',
+      path: '/Joboffer',
       name: 'Joboffer',
       component: Joboffer,
     },
     {
-      path: '/',
+      path: '/Profile',
       name: 'Profile',
       component: Profile,
     },
     {
-      path: '/',
+      path: '/Upgrade',
       name: 'Upgrade',
       component: Upgrade,
     },
