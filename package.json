@@ -17,9 +17,11 @@
     "bootstrap": "^5.0.0",
     "bootstrap-vue": "^2.21.2",
     "material-design-icons-iconfont": "^6.1.0",
+    "vee-validate": "^3.4.5",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vue-virtual-table": "^0.2.19",
+    "vuelidate": "^0.7.6",
     "vuetify": "^2.4.11"
   },
   "devDependencies": {
