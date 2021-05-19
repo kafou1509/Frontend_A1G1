@@ -12,58 +12,60 @@
         <v-img :src="logo" max-height="150" max-width="150" class="center"></v-img>
       </v-flex>
       <br>
-      <router-link v-bind:to="{ name: 'Dashboard' }" class="side_bar_link">
+      <router-link v-bind:to="{ name: 'Dashboard' }" class="side_bar_link" active-class="active">
         <v-list-item>
           <v-list-item-action>
             <v-icon style="color:white">home</v-icon>
           </v-list-item-action>
-          <v-list-item-content style="color:white">Dashboard</v-list-item-content>
+          <v-list-item-content style="color:white" @click="changeIcon('Dashboard')">
+            Dashboard
+          </v-list-item-content>
         </v-list-item>
       </router-link>
-      <router-link v-bind:to="{ name: 'Joboffer' }" class="side_bar_link">
+      <router-link v-bind:to="{ name: 'Joboffer' }" class="side_bar_link" active-class="active">
         <v-list-item>
           <v-list-item-action>
             <v-icon style="color:white">mdi-briefcase</v-icon>
           </v-list-item-action>
           <v-hover v-slot="{ hover }">
-            <v-list-item-content  style="color:white">Job offer</v-list-item-content>
+            <v-list-item-content style="color:white" @click="changeIcon('Joboffer')">
+              Job offer
+            </v-list-item-content>
           </v-hover>
         </v-list-item>
       </router-link>
-      <router-link v-bind:to="{ name: 'Upgrade' }" class="side_bar_link">
+      <router-link v-bind:to="{ name: 'Upgrade' }" class="side_bar_link" active-class="active">
         <v-list-item>
           <v-list-item-action>
-            <v-icon  style="color:white">mdi-cogs</v-icon>
+            <v-icon style="color:white">mdi-cogs</v-icon>
           </v-list-item-action>
-          <v-list-item-content  style="color:white">Upgrade</v-list-item-content>
+          <v-list-item-content style="color:white" @click="changeIcon('Upgrade')">
+            Upgrade
+          </v-list-item-content>
         </v-list-item>
       </router-link>
-      <router-link v-bind:to="{ name: 'Profile' }" class="side_bar_link">
+      <router-link v-bind:to="{ name: 'Profile' }" class="side_bar_link" active-class="active">
         <v-list-item>
           <v-list-item-action>
             <v-icon id="imp" style="color:white">mdi-account-circle</v-icon>
           </v-list-item-action>
-          <v-list-item-content id="imp" style="color:white">Profile</v-list-item-content>
+          <v-list-item-content id="imp" style="color:white" @click="changeIcon('Profile')">
+            Profile
+          </v-list-item-content>
         </v-list-item>
       </router-link>
     </v-list>
   </v-navigation-drawer>
   <v-app-bar fixed app class="topbar">
-    <v-icon style="color:#1A1A1A">mdi-cogs</v-icon>
+    <v-icon style="color:#1A1A1A">{{titleIcon}}</v-icon>
     <v-toolbar-title style="color:#1A1A1A" v-text="this.$route.name"></v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-text-field
-        hide-details
-        prepend-icon="mdi-magnify"
-        single-line
-        label="Search"
-        outlined
-      ></v-text-field>
+    <v-text-field hide-details prepend-icon="mdi-magnify" single-line label="Search" outlined></v-text-field>
     <v-spacer></v-spacer>
     <div class="text-center">
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn  icon v-bind="attrs" v-on="on">
+          <v-btn icon v-bind="attrs" v-on="on">
             <v-avatar size="40">
               <v-icon style="color:black">mdi-account</v-icon>
             </v-avatar>
@@ -101,6 +103,7 @@ export default { //import { mdiCogs } from '@mdi/js';
   data: () => ({
     drawer: null,
     logo: foot1,
+    titleIcon: 'home',
     props: { // eslint-disable-next-line
       source: String,
     },
@@ -112,6 +115,22 @@ export default { //import { mdiCogs } from '@mdi/js';
       title: 'Sign out'
     }],
   }),
-
+  methods: { /* eslint-disable */
+    changeIcon(i) {
+      if (i == 'Dashboard') {
+        this.titleIcon = 'home';
+      } else {
+        if (i == 'Joboffer') {
+          this.titleIcon = 'mdi-briefcase';
+        } else {
+          if (i == 'Upgrade') {
+            this.titleIcon = 'mdi-cogs';
+          } else {
+            this.titleIcon = 'mdi-account';
+          }
+        }
+      }
+    }, //changeIcon stops here
+  },
 };
 </script>
