@@ -5,6 +5,7 @@ import Joboffer from '@/components/Joboffer';
 import Profile from '@/components/Profile';
 import Upgrade from '@/components/Upgrade';
 
+
 Vue.use(Router);
 /* eslint-disable */
 export default new Router({

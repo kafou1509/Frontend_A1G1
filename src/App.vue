@@ -57,17 +57,26 @@
     </v-list>
   </v-navigation-drawer>
   <v-app-bar fixed app class="topbar">
-    <v-icon style="color:#1A1A1A">{{titleIcon}}</v-icon>
+    <v-icon style="color:#1A1A1A">{{titleIcon}}</v-icon>&nbsp;&nbsp;
     <v-toolbar-title style="color:#1A1A1A" v-text="this.$route.name"></v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-text-field hide-details prepend-icon="mdi-magnify" single-line label="Search" outlined></v-text-field>
+    <v-text-field rounded hide-details prepend-icon="mdi-magnify" single-line label="Search" outlined></v-text-field>
     <v-spacer></v-spacer>
-    <div class="text-center">
+    <div>
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
-            <v-avatar size="40">
-              <v-icon style="color:black">mdi-account</v-icon>
+            <v-icon style="color:#1A1A1A">mdi-calendar</v-icon>
+          </v-btn>
+        </template>
+      </v-menu>
+    </div>
+    <div class="text-center">
+      <v-menu offset-y>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn outlined style="color:#1A1A1A;background-color:#FFC600" icon v-bind="attrs" v-on="on">
+            <v-avatar size="30">
+              <v-icon style="color:#1A1A1A;background-color:#FFC600">mdi-account</v-icon>
             </v-avatar>
 
           </v-btn>
@@ -115,7 +124,11 @@ export default { //import { mdiCogs } from '@mdi/js';
       title: 'Sign out'
     }],
   }),
-  methods: { /* eslint-disable */
+  components: { // eslint-disable-next-line
+
+  },
+  methods: {
+    /* eslint-disable */
     changeIcon(i) {
       if (i == 'Dashboard') {
         this.titleIcon = 'home';
