@@ -22,8 +22,13 @@
           </v-list-item-content>
         </v-list-item>
       </router-link>
+<<<<<<< Updated upstream
       <router-link v-bind:to="{ name: 'Joboffer' }" class="side_bar_link" active-class="active">
         <v-list-item>
+=======
+      <router-link v-bind:to="{ name: 'Contact' }" class="side_bar_link">
+        <v-list-item> 
+>>>>>>> Stashed changes
           <v-list-item-action>
             <v-icon style="color:white">mdi-briefcase</v-icon>
           </v-list-item-action>
